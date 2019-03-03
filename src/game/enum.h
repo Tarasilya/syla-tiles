@@ -1,6 +1,14 @@
 #ifndef __ENUM_H__
 #define __ENUM_H__
 
+
+enum TileType
+{
+	CASTLE,
+	ORE_DEPOSIT,
+	GRASSLAND
+}
+
 enum RoadState
 {
     CONSTRUCTION,
