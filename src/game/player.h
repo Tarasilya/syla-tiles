@@ -12,10 +12,6 @@ class Player {
 private:
 	int id_;
 	std::map<sf::Keyboard::Key, Control> controls_;
-	CityView* focusedView_;
-	CityView* baseView_;
-
-	void FocusOn(CityView* view);
 public:
 	Player(std::map<sf::Keyboard::Key, Control> controls, CityView* baseView, int id);
 

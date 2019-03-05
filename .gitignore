@@ -1,0 +1,12 @@
+a.out
+Taras
+*.o
+syla-roads.*
+bin/
+Makefile
+syla
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+cli
+ser
