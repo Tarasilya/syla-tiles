@@ -22,11 +22,11 @@ public:
 	Tile(int index, double x_coord, double y_coord, TileType tile_type);
 	void SetNeighbors(std::vector<Tile*> neighboring_tiles);
 
-    double x();
-    double y();
-    int index();
-    std::vector<Unit*> GetUnits();
-    std::vector<Tile*> GetNeighbors();
+    double x() const;
+    double y() const;
+    int index() const;
+    const std::vector<Unit*>& GetUnits() const;
+    const std::vector<Tile*>& GetNeighbors() const;
 
     void AddUnit(Unit* incoming_unit);
     void RemoveUnit(Unit* leaving_unit);

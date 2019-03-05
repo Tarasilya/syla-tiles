@@ -12,5 +12,5 @@ protected:
 
 public:
     virtual void Tick(double tick_time) = 0;
-   	virtual ObjectView* GetView(Game* game) = 0;    
+   	ObjectView* GetView(Game* game);    
 };

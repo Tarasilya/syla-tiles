@@ -9,6 +9,7 @@ std::vector<Unit*> units_;
 std::vector<Tile*> neighboring_tiles_;
 
 Tile::Tile(int index, double x_coord, double y_coord, TileType tile_type){
+	view_ = new TileView();
 	index_ = index;
 	x_ = x_coord;
 	y_ = y_coord;

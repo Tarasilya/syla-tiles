@@ -9,13 +9,6 @@ enum TileType
 	GRASSLAND
 }
 
-enum RoadState
-{
-    CONSTRUCTION,
-    TRADE,
-    WAR
-};
-
 enum Actions
 {
     N, // Nothing
