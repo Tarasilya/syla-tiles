@@ -20,7 +20,7 @@ private:
 	std::vector<Tile*> neighboring_tiles_;
 public:
 	Tile(int index, double x_coord, double y_coord, TileType tile_type);
-	void SetNeighbors(std::vector<Tile*> neighboring_tiles_);
+	void SetNeighbors(std::vector<Tile*> neighboring_tiles);
 
     double x();
     double y();
