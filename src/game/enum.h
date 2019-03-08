@@ -7,7 +7,7 @@ enum TileType
 	CASTLE,
 	ORE_DEPOSIT,
 	GRASSLAND
-}
+};
 
 enum Actions
 {

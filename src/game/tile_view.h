@@ -12,4 +12,4 @@ private:
 public:
 	TileView(Tile* tile_);
 	void Draw(Painter* painter) const;
-}
+};

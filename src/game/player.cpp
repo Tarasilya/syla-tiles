@@ -1,10 +1,7 @@
-#include "enum.h"
-#include "city.h"
-#include "road.h"
 #include "player.h"
+
 #include "control_keys.h"
-#include "road_view.h"
-#include "city_view.h"
+#include "unit.h"
 
 #include <iostream>
 
@@ -35,4 +32,8 @@ bool Player::ProcessKey(sf::Keyboard::Key key) {
 
 	return false;
 
+}
+
+void Player::SetUnit(Unit* unit) {
+	focusedUnit_ = unit;
 }

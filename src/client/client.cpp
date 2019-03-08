@@ -27,9 +27,8 @@ Client::Client(){
     GameConfig& config = GameConfig::getInstance();
 
 
-    std::string server_name = config.GetString("server_name");
-    int server_port = config.GetInt("server_port");
-    // get server_name and server_port
+    std::string server_name = config.GetString("SERVER_NAME");
+    int server_port = config.GetInt("SERVER_PORT");
 
     socket.setBlocking(false);
     sf::Socket::Status status = socket.connect(server_name.c_str(), server_port);

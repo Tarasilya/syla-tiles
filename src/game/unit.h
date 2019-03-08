@@ -10,4 +10,5 @@ public:
     Unit(Tile* homie);
     void Move();
     void Tick(double tick_time) override;
+    Tile* GetTile() const;
 };

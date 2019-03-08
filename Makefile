@@ -271,6 +271,33 @@ src/game/game_config.cpp.s:
 	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/game_config.cpp.s
 .PHONY : src/game/game_config.cpp.s
 
+src/game/game_object.o: src/game/game_object.cpp.o
+
+.PHONY : src/game/game_object.o
+
+# target to build an object file
+src/game/game_object.cpp.o:
+	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/game_object.cpp.o
+.PHONY : src/game/game_object.cpp.o
+
+src/game/game_object.i: src/game/game_object.cpp.i
+
+.PHONY : src/game/game_object.i
+
+# target to preprocess a source file
+src/game/game_object.cpp.i:
+	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/game_object.cpp.i
+.PHONY : src/game/game_object.cpp.i
+
+src/game/game_object.s: src/game/game_object.cpp.s
+
+.PHONY : src/game/game_object.s
+
+# target to generate assembly for a file
+src/game/game_object.cpp.s:
+	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/game_object.cpp.s
+.PHONY : src/game/game_object.cpp.s
+
 src/game/main.o: src/game/main.cpp.o
 
 .PHONY : src/game/main.o
@@ -352,32 +379,59 @@ src/game/player.cpp.s:
 	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/player.cpp.s
 .PHONY : src/game/player.cpp.s
 
-src/game/road_view.o: src/game/road_view.cpp.o
+src/game/tile.o: src/game/tile.cpp.o
 
-.PHONY : src/game/road_view.o
+.PHONY : src/game/tile.o
 
 # target to build an object file
-src/game/road_view.cpp.o:
-	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/road_view.cpp.o
-.PHONY : src/game/road_view.cpp.o
+src/game/tile.cpp.o:
+	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/tile.cpp.o
+.PHONY : src/game/tile.cpp.o
 
-src/game/road_view.i: src/game/road_view.cpp.i
+src/game/tile.i: src/game/tile.cpp.i
 
-.PHONY : src/game/road_view.i
+.PHONY : src/game/tile.i
 
 # target to preprocess a source file
-src/game/road_view.cpp.i:
-	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/road_view.cpp.i
-.PHONY : src/game/road_view.cpp.i
+src/game/tile.cpp.i:
+	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/tile.cpp.i
+.PHONY : src/game/tile.cpp.i
 
-src/game/road_view.s: src/game/road_view.cpp.s
+src/game/tile.s: src/game/tile.cpp.s
 
-.PHONY : src/game/road_view.s
+.PHONY : src/game/tile.s
 
 # target to generate assembly for a file
-src/game/road_view.cpp.s:
-	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/road_view.cpp.s
-.PHONY : src/game/road_view.cpp.s
+src/game/tile.cpp.s:
+	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/tile.cpp.s
+.PHONY : src/game/tile.cpp.s
+
+src/game/tile_view.o: src/game/tile_view.cpp.o
+
+.PHONY : src/game/tile_view.o
+
+# target to build an object file
+src/game/tile_view.cpp.o:
+	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/tile_view.cpp.o
+.PHONY : src/game/tile_view.cpp.o
+
+src/game/tile_view.i: src/game/tile_view.cpp.i
+
+.PHONY : src/game/tile_view.i
+
+# target to preprocess a source file
+src/game/tile_view.cpp.i:
+	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/tile_view.cpp.i
+.PHONY : src/game/tile_view.cpp.i
+
+src/game/tile_view.s: src/game/tile_view.cpp.s
+
+.PHONY : src/game/tile_view.s
+
+# target to generate assembly for a file
+src/game/tile_view.cpp.s:
+	$(MAKE) -f CMakeFiles/syla.dir/build.make CMakeFiles/syla.dir/src/game/tile_view.cpp.s
+.PHONY : src/game/tile_view.cpp.s
 
 src/game/unit.o: src/game/unit.cpp.o
 
@@ -566,6 +620,9 @@ help:
 	@echo "... src/game/game_config.o"
 	@echo "... src/game/game_config.i"
 	@echo "... src/game/game_config.s"
+	@echo "... src/game/game_object.o"
+	@echo "... src/game/game_object.i"
+	@echo "... src/game/game_object.s"
 	@echo "... src/game/main.o"
 	@echo "... src/game/main.i"
 	@echo "... src/game/main.s"
@@ -575,9 +632,12 @@ help:
 	@echo "... src/game/player.o"
 	@echo "... src/game/player.i"
 	@echo "... src/game/player.s"
-	@echo "... src/game/road_view.o"
-	@echo "... src/game/road_view.i"
-	@echo "... src/game/road_view.s"
+	@echo "... src/game/tile.o"
+	@echo "... src/game/tile.i"
+	@echo "... src/game/tile.s"
+	@echo "... src/game/tile_view.o"
+	@echo "... src/game/tile_view.i"
+	@echo "... src/game/tile_view.s"
 	@echo "... src/game/unit.o"
 	@echo "... src/game/unit.i"
 	@echo "... src/game/unit.s"

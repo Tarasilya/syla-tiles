@@ -1,5 +1,5 @@
 #include "game_object.h"
 
-ObjectView* GameObject::GetView(Game* game){
+ObjectView* GameObject::GetView(){
 	return view_;
 }

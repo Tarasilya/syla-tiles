@@ -14,8 +14,9 @@ const Color PLAYER_ONE_COLOR = {105, 140, 230, 127};
 const Color PLAYER_TWO_COLOR = {210, 80, 40, 127 };
 const std::vector<Color> PLAYER_COLORS = {PLAYER_ONE_COLOR, PLAYER_TWO_COLOR};
 const Color SELECTION_COLORS [] = {{24, 84, 89}, {255, 37, 42}};
-const Color CITY_COLORS [] = {{82, 194, 228}, {202, 27, 93}};
 const Color NEUTRAL_CITY_COLOR = {0x21, 0x21, 0x21};
+
+const Color TILE_COLOR = {82, 194, 228};
 
 class Painter {
 private:

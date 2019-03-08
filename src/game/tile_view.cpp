@@ -1,11 +1,13 @@
 #include "tile_view.h"
-#include "game_config.h"
 
+#include "game_config.h"
+#include "tile.h"
+
+#include "painter/painter.h"
 
 TileView::TileView(Tile* tile){
-	config = GameConfig.getInstance();
 	tile_ = tile;
-	tile_radius_ = config.GetFloat("TILE_RADIUS"); // ADD IT
+	tile_radius_ = GameConfig::getInstance().GetFloat("TILE_RADIUS");
 }
 
 void TileView::Draw(Painter* painter) const{

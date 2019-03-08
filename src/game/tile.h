@@ -5,7 +5,7 @@
 #include "player.h"
 #include "object_view.h"
 
-#include<vector>
+#include <vector>
 
 class Unit;
 
@@ -33,5 +33,4 @@ public:
 
 
     void Tick(double tick_time) override;
-    ObjectView* GetView(Game* game) override;
 };

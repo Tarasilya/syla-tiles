@@ -15,7 +15,6 @@ class Game {
 private:
 	Painter* painter_;
 	Map* map_;
-	double total_time_;
 	int seconds_;
 
 	std::vector<ObjectView*> views_;
@@ -30,6 +29,4 @@ public:
 	void Draw();
 	void ProcessKey(sf::Keyboard::Key key);
 	void Tick(double dt);
-	const std::vector<City*>& GetCities() const;
-	std::vector<double> GetScores();
 };

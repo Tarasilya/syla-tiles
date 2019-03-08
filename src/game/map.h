@@ -4,12 +4,13 @@
 #include <vector>
 
 class GameObject;
-class City;
+class Tile;
 
 class Map {
 private:
+	std::vector<std::vector<Tile*>> neighbors;
 	std::vector<GameObject*> objects_;
-	std::vector<City*> cities_;
+	std::vector<Tile*> tiles_;
 	std::string filename_;
 	Map();
 	void ReadObjects();
@@ -18,5 +19,11 @@ private:
 public:
 	Map(std::string filename);
 	const std::vector<GameObject*>& GetObjects();
-	const std::vector<City*>& GetCities();
+	const std::vector<Tile*>& GetTiles();
+
+
+
+// HUYNYA INCOMING
+    void AddObject(GameObject* object);
+
 };

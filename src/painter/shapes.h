@@ -21,6 +21,9 @@ struct Rectangle {
 	double x2;
 	double y2;
 	Color color;
+
+	Rectangle();
+	Rectangle(double x1, double y1, double x2, double y2, Color color);
 };
 
 struct Circle {

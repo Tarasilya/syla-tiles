@@ -30,20 +30,11 @@ float GameConfig::GetFloat(std::string name) {
 std::map<sf::Keyboard::Key, Control> GameConfig::GetControls(int player_index) {
 	std::map<sf::Keyboard::Key, Control> controls_;
 	std::string ids = utils::ToStr(player_index);
-	controls_[GetKey("MOVE_LEFT" + ids)] = MOVE_LEFT;
-	controls_[GetKey("MOVE_RIGHT" + ids)] = MOVE_RIGHT;
-	controls_[GetKey("MOVE_UP" + ids)] = MOVE_UP;
-	controls_[GetKey("MOVE_DOWN" + ids)] = MOVE_DOWN;
-	controls_[GetKey("SELECT" + ids)] = SELECT;
-	controls_[GetKey("ROAD_SELECT" + ids)] = ROAD_SELECT;
-	controls_[GetKey("BUILD" + ids)] = BUILD;
-	controls_[GetKey("ACT_LOW" + ids)] = ACT_LOW;
-	controls_[GetKey("ACT_MEDIUM" + ids)] = ACT_MEDIUM;
-	controls_[GetKey("ACT_HIGH" + ids)] = ACT_HIGH;
-	controls_[GetKey("DECLARE_WAR" + ids)] = DECLARE_WAR;
+	controls_[GetKey("MOVE" + ids)] = MOVE;
 	return controls_;
 }
 
 sf::Keyboard::Key GameConfig::GetKey(std::string name) {
+	std::cerr << "converting " << params_[name] << std::endl;
 	return ToSfKey(params_[name]);
 }
